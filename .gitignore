@@ -1,0 +1,25 @@
+# --- Secrets: never commit ---
+tokens.json
+tokens.*.json
+validtokens.txt
+accounts.txt
+config.json
+*.bak
+*.session.json
+
+# Runtime account state (may embed usernames / per-account results)
+banned.json
+failed.json
+unbanned.json
+working.json
+
+# Live auth material: Steam appOwnershipTickets, cellids, session refreshTokens
+data/
+
+# --- Build output / tooling ---
+bin/
+obj/
+node_modules/
+.vs/
+*.user
+*.suo

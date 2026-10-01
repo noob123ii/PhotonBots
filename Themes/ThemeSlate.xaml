@@ -1,0 +1,39 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="Brush.BgStart" Color="#0A0C0E"/>
+    <SolidColorBrush x:Key="Brush.BgEnd" Color="#141618"/>
+    <SolidColorBrush x:Key="Brush.Glass" Color="#141618"/>
+    <SolidColorBrush x:Key="Brush.GlassBorder" Color="#282A2E"/>
+    <SolidColorBrush x:Key="Brush.GlassBorderLight" Color="#383A3E"/>
+    <SolidColorBrush x:Key="Brush.Sidebar" Color="#08090A"/>
+    <SolidColorBrush x:Key="Brush.SidebarBorder" Color="#1A1C1E"/>
+    <SolidColorBrush x:Key="Brush.BgInput" Color="#0E1012"/>
+    <SolidColorBrush x:Key="Brush.BgHover" Color="#181A1E"/>
+    <SolidColorBrush x:Key="Brush.BgActive" Color="#22242A"/>
+    <SolidColorBrush x:Key="Brush.Accent" Color="#6B7280"/>
+    <SolidColorBrush x:Key="Brush.AccentHover" Color="#7D8492"/>
+    <SolidColorBrush x:Key="Brush.AccentSoft" Color="#22242A"/>
+    <SolidColorBrush x:Key="Brush.AccentText" Color="#9CA3AF"/>
+    <SolidColorBrush x:Key="Brush.TitleBar" Color="#060708"/>
+    <SolidColorBrush x:Key="Brush.Text" Color="#F0F0F0"/>
+    <SolidColorBrush x:Key="Brush.TextMuted" Color="#888888"/>
+    <SolidColorBrush x:Key="Brush.TextDim" Color="#585858"/>
+    <SolidColorBrush x:Key="Brush.TextLabel" Color="#989898"/>
+    <SolidColorBrush x:Key="Brush.Success" Color="#22C55E"/>
+    <SolidColorBrush x:Key="Brush.Warning" Color="#F59E0B"/>
+    <SolidColorBrush x:Key="Brush.Error" Color="#EF4444"/>
+    <SolidColorBrush x:Key="Brush.Glow" Color="#6B7280"/>
+
+    <LinearGradientBrush x:Key="Brush.BgGradient" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#0A0C0E" Offset="0"/>
+        <GradientStop Color="#141618" Offset="0.5"/>
+        <GradientStop Color="#08090A" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Brush.AccentGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#6B7280" Offset="0"/>
+        <GradientStop Color="#4B5563" Offset="1"/>
+    </LinearGradientBrush>
+
+</ResourceDictionary>

@@ -1,0 +1,52 @@
+<Window x:Class="GtagBotUI.Views.HudWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HUD" Height="32" Width="440"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Topmost="True" ShowInTaskbar="False" ResizeMode="NoResize"
+        IsHitTestVisible="False"
+        WindowStartupLocation="Manual" SnapsToDevicePixels="True"
+        FontFamily="Segoe UI Variable Display, Segoe UI, sans-serif"
+        FontSize="11">
+    <Border CornerRadius="0,0,10,10" Padding="18,0,18,0"
+            Height="28" VerticalAlignment="Top"
+            Opacity="0.92">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Background" Value="#141618"/>
+                <Setter Property="BorderBrush" Value="#282A2E"/>
+                <Setter Property="BorderThickness" Value="1,0,1,1"/>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding IsRunning}" Value="True">
+                        <Setter Property="Background" Value="#1A1D22"/>
+                        <Setter Property="BorderBrush" Value="#3B82F6"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+        <DockPanel LastChildFill="False" VerticalAlignment="Center">
+            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Israel Tools" FontSize="11" FontWeight="SemiBold"
+                           Foreground="#9CA3AF" VerticalAlignment="Center"/>
+                <TextBlock Text="|" FontSize="10" Foreground="#585858"
+                           VerticalAlignment="Center" Margin="6,0"/>
+                <TextBlock Text="Version 1.0.0" FontSize="10"
+                           Foreground="#888888" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Bots Running:" FontSize="10"
+                           Foreground="#585858" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding HudBotsText}" FontSize="10" FontWeight="SemiBold"
+                           Foreground="#9CA3AF" VerticalAlignment="Center" Margin="4,0,10,0"/>
+                <Border Width="1" Height="12" Background="#282A2E" Margin="0,0,10,0"/>
+                <TextBlock Text="Tracks:" FontSize="10"
+                           Foreground="#585858" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding HudTracksText}" FontSize="10" FontWeight="Bold"
+                           Foreground="#22C55E" VerticalAlignment="Center" Margin="4,0,10,0"/>
+                <Border Width="1" Height="12" Background="#282A2E" Margin="0,0,10,0"/>
+                <Image Source="pack://application:,,,/Resources/Isreal.png" Stretch="Uniform" Width="14" Height="14"
+                       RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</Window>

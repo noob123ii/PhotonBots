@@ -1,0 +1,57 @@
+﻿{
+    "webhooks":  {
+                     "rareCosmetic":  "",
+                     "lobbyJoin":  ""
+                 },
+    "targetCosmetics":  {
+                            "LBAAK.":  "MOD STICK",
+                            "LBADE.":  "FINGER PAINTER",
+                            "LBANI.":  "AA BADGE"
+                        },
+    "regions":  [
+                    "us/*",
+                    "usw/*",
+                    "eu/*"
+                ],
+    "playfabTitleId":  "63FDD",
+    "photonAppId":  "75dc33b5-d5fc-4b4c-bf88-eb70baabe183",
+    "photonAppVersion":  "prependSPACEcodeMAP52345.live1.1.1.142_2.40",
+    "photonVoiceAppVersion":  "prependSPACEcodeMAP52345.live1.1.1.142",
+    "photonAuthAppVersion":  "prependSPACEcodeMAP52345.live1.1.1.142",
+    "zones":  [
+                  "forest",
+                  "city"
+              ],
+    "zoneGameTypes":  {
+                          "forest":  "Infection",
+                          "city":  "Casual"
+                      },
+    "gameModeFilter":  {
+                           "platform":  "OTHER",
+                           "queueName":  "DEFAULT",
+                           "language":  "English",
+                           "fan_club":  "false"
+                       },
+    "steamAppId":  1533390,
+    "authApiBase":  "https://auth-prod.gtag-cf.com",
+    "mothership":  {
+                       "base":  "https://f3e9fb19.prod.aa-mothership.com",
+                       "titleId":  "f3e9fb19",
+                       "envId":  "7f3a99dd-5598-4725-98cf-6538d28feb9f",
+                       "deploymentId":  "1e4c4fa0-df7a-4a1d-86c2-ec61fcf71340"
+                   },
+    "timing":  {
+                   "joinDelayMs":  [
+                                       1000,
+                                       3000
+                                   ],
+                   "roomDwellMs":  [
+                                       20000,
+                                       45000
+                                   ],
+                   "scanSettleMs":  2000,
+                   "cyclesPerAuth":  20
+               },
+    "maxConcurrentAccounts":  2,
+    "cosmeticCatalogCsv":  ""
+}
